@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy import text
-from sql_queries import search_people
+from sql_queries.sql_queries import search_people
 
-engine = create_engine('mysql+pymysql://root:root@localhost/car_rental')
+engine = create_engine('mysql+pymysql://newuser:michal_007@localhost/car_rental')
 
 first_name_start = input("Zadej začátek křestní:")
 last_name_end = input("Zadej konec příjmení:")
